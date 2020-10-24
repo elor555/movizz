@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Movizz - המלצות סרטים לפי סינון </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style-index.css"/>
+
+</head>
+<body>
+<header>
+    <h1><span>Movizz</span><br/>המלצות סרטים לפי סינון פרמטרים</h1>
+</header>
+<main>
+    <article>
+    <form method="post" class="form">
+        <div><label for="fldSearch"></label>
+            <input type="search" id="fldSearch" name="keywords" placeholder="שם הסרט..." size="70" maxLength="50" tabindex=0 autofocus>
+            <input type="submit" name="btnSubmit" value="חיפוש"></div>
+    </form>
+    <form>
+        <nav>
+            <ul class="filter">
+                <li>
+                    סנן <i class="fa fa-filter"></i>
+                </li>
+                <li>
+                    <label for="genre"></label>
+                    <select name="סוגה" id="genre" class="optionColor">
+                        <option value="סוגה">-- סוגה -- </option>
+                        <option value="אימה">אימה</option>
+                        <option value="דוקומנטרי">דוקומנטרי</option>
+                        <option value="דרמה">דרמה</option>
+                        <option value="דרמה רומנטית">דרמה רומנטית</option>
+                        <option value="מדע בדיוני">מדע בדיוני</option>
+                        <option value="מיוזיקל/מחזמר">מיוזיקל/מחזמר</option>
+                        <option value="מתח">מתח</option>
+                        <option value="קומדיה">קומדיה</option>
+                        <option value="קומדיה רומנטית">קומדיה רומנטית</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="rating"></label>
+                    <select name="דירוג" id="rating" class="optionColor">
+                        <option value="דירוג">-- דירוג -- </option>
+                        <option value="5 כוכבים" >5 כוכבים</option>
+                        <option value="4 כוכבים">4 כוכבים</option>
+                        <option value="3 כוכבים">3 כוכבים</option>
+                        <option value="2 כוכבים">2 כוכבים</option>
+                        <option value="כוכב אחד">כוכב אחד</option>
+                    </select>
+                </li>
+                <li>
+                    <input id="year" type="number" min="1900" max="2020" step="1" placeholder="שנה" class="optionColor"/>
+                </li>
+                <li>
+                    <label for="length"></label>
+                    <select name="אורך הסרט" id="length" class="optionColor">
+                        <option value="אורך הסרט">-- אורך הסרט -- </option>
+                        <option value="עד שעה">עד שעה</option>
+                        <option value="עד שעה וחצי">עד שעה וחצי</option>
+                        <option value="עד שעתיים">עד שעתיים</option>
+                        <option value="עד שעתיים וחצי">עד שעתיים וחצי</option>
+                        <option value="עד שלוש שעות">עד שלוש שעות</option>
+                        <option value="עד שלוש וחצי שעות">עד שלוש וחצי שעות</option>
+                        <option value="עד ארבע שעות">עד ארבע שעות</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="MPCRS"></label>
+                    <select name="סיווג צפייה" id="MPCRS" class="optionColor">
+                        <option value="סיווג צפיה">-- סיווג צפיה -- </option>
+                        <option value="מותר לכל">מותר לכל</option>
+                        <option value="מוגבל לצפייה מגיל 12 ומעלה">הגבלת גיל: 12+</option>
+                        <option value="מוגבל לצפייה מגיל 14 ומעלה">הגבלת גיל: 14+</option>
+                        <option value="מוגבל לצפייה מגיל 16 ומעלה">הגבלת גיל: 16+</option>
+                        <option value="מוגבל לצפייה מגיל 18 ומעלה">הגבלת גיל: 18+</option>
+                    </select>
+                </li>
+                     <li>
+                         <input type="reset" id="reset" value="נקה"/>
+                     </li>
+            </ul>
+        </nav>
+    </form>
+    </article>
+        <section></section>
+</main>
+<footer>
+<p>Icons made by <a href="https://www.flaticon.com/free-icon/cinema_2809529" title="mynamepong">mynamepong</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a></p>
+</footer>
+</body>
+</html>

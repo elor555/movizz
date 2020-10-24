@@ -1,0 +1,225 @@
+/* || General styles */
+* {
+  font-family: 'Comic Neue', cursive;
+  }
+
+html {
+    direction: rtl;
+    text-align: right;
+}
+
+body {
+    position: relative;
+    background-color: rgba(227, 156, 100, 0.8);
+    background-image: url("wave-cover.svg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    }
+
+/* || Typography */
+
+h1, span {
+    text-align: center;
+    font-weight: bold;
+    color: #121824;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+h1 {
+    font-family: 'Krona One', sans-serif;
+    font-size: 1.5em;
+    }
+
+h3, h4 {
+    font-weight: bold;
+    color: #E39C64;
+}
+
+h3 {
+    font-weight: bold;
+    color: #E39C64;
+    font-size: 2em;
+    }
+
+h4 {
+    font-weight: bold;
+    color: #E39C64;
+    font-size: 1.5em;
+    margin-bottom: 2px;
+    }
+
+span {
+    font-family: 'Titan One', cursive;
+    font-size: 2em;
+    }
+
+::placeholder {
+  color: #E39C64;
+}
+
+input[type="search"], input[type="submit"] {
+  padding: 4px;
+  outline: none;
+  border-radius: 90px;
+  font-size: 18px;
+  color: #E39C64;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: #7A4348;
+  }
+
+input[type="search"] {
+    border: 1px solid #E39C64;
+    width: 100vh;
+    }
+
+input[type="submit"] {
+    border: 1px solid #121824;
+    font-weight: bold;
+    }
+
+input[type="submit"]:focus {
+    border: 3px solid #121824;
+    }
+
+.back {
+    font-size: 1em;
+    border-radius: 5px;
+    background: #F2B795;
+    color: rgb(122,67,72);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: 1px solid #121824;
+    }
+
+.back:hover {
+    font-weight: bold;
+    background: rgb(122,67,72);
+    color: #9E825B;
+    border: 2px solid #121824;
+    }
+
+footer p {
+  font-size: 10px;
+  color: #E39C64;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-align: left;
+  }
+
+/* || Header Details */
+
+header{
+    background-image: url("cinema-top.svg");
+    background-size: contain;
+    padding: 5px;
+    background-position: left;
+    background-repeat: no-repeat;
+    }
+
+/* || Main And Navigation Details */
+
+main{
+    text-align: center;
+    }
+
+.form {
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 5px;
+  font-size : 100%;
+  }
+
+.optionColor {
+    color: #E39C64;
+    background-color: #7A4348;
+    border: 1px solid #E39C64;
+    }
+
+.filter {
+   justify-content: space-around;
+   margin: 0;
+   }
+
+.filter li {
+   display: inline-block;
+   padding: 0.5em;
+   }
+
+.filter:first-child li {
+    text-align: center;
+    color: #121824;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+#reset {
+    border: 1px solid #121824;
+    color: #7A4348;
+    background-color: #E39C64;
+    border-radius: 90px;
+    }
+
+#reset:focus {
+  outline: none;
+  border: 2px solid #121824;
+  }
+
+section {
+    position: relative;
+    height: 100vh;
+    padding: 5px;
+    background: rgba(227, 156, 100, 0.3);
+    border: 3px solid #E39C64;
+    }
+
+.center {
+   position: absolute;
+    justify-content: center;
+   bottom: 10px ;
+   left: 50%;
+   -webkit-transform: translateX(-50%);
+   transform: translateX(-50%)
+    }
+
+.chosen-result {
+    text-align: right;
+    margin: 5px;
+    color: #E39C64;
+    background: rgba(122,67,72, 0.7);
+    }
+
+.movie-logo {
+  float: right;
+  border: 3px solid #121824;
+  border-radius: 5px;
+  margin: 5px;
+    }
+
+section ul {
+    list-style-type: none;
+    }
+
+.trailer {
+    display:block;
+    font-weight: bold;
+    color: #E39C64;
+    font-size: 1.5em;
+    }
+
+#trailer {
+    border: 3px solid #121824;
+    border-radius: 5px;
+    }
+
+section p {
+    margin-top: auto;
+    }
+
+/* || Footer Details */
+
+footer{
+    background-image: url("cinema-bottom.svg");
+    background-size: contain;
+    padding: 5px;
+    background-position: right;
+    background-repeat: no-repeat;
+    }
